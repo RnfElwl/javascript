@@ -101,6 +101,66 @@ player1.sayHello("lynn");
 function plus(a, b) {
   console.log(a + b);
 }
-plus(5, 5);
+plus(5, 5, 5, 1, 4, 5, 6, 7); //argument는 처음 숫자 부터 값을 받음
 
 //const 대부분 >> let가끔 >>>>>>>>>>>>var 안씀
+
+const player3 = {
+  name: "Nico",
+  age: 98,
+};
+
+console.log(player3, console); // 콘솔도 object랑 똑같은 형태
+player3.name = "Elwl";
+console.log(player3);
+/*
+const calculrator = {
+  add: function (a, b) {
+    console.log(a + b);
+  },
+  minus: function (a, b) {
+    console.log(a - b);
+  },
+  divide2: function (a, b) {
+    console.log(a / b);
+  },
+  multi: function (a, b) {
+    console.log(a * b);
+  },
+  power: function (a, b) {
+    console.log(a ** b);
+  },
+};
+*/
+// 위 코드는 출력만 가능하지 계산한 값을 어떻게 할 수없음
+const calculrator = {
+  add: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  divide2: function (a, b) {
+    return a / b;
+  },
+  multi: function (a, b) {
+    a * b;
+  },
+  power: function (a, b) {
+    a ** b;
+  },
+};
+const plusResult = calculrator.add(1, 3);
+const minusResult = calculrator.minus(plusResult, 2);
+const divideResult = calculrator.divide2(10, minusResult);
+const multiResult = calculrator.multi(divideResult, plusResult);
+const powerResult = calculrator.power(multiResult, divideResult);
+
+const age = 96;
+function calculateKrAge(ageOfForigner) {
+  return ageOfForigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
