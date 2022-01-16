@@ -1,6 +1,5 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-console.dir(loginInput);
 //const loginButton = document.querySelector("#login-form button");
 const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME = "hidden";
